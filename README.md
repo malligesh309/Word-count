@@ -18,9 +18,16 @@ Anaconda - Python 3.7
 ### Step 6: 
 
 ## PROGRAM:
-
+```
+num_words=0
+with open('cars (1).csv',"r") as f:
+  for line in f:
+    words=line.split()
+    num_words+=len(words)
+print("number of words",num_words)
+```
 ### OUTPUT:
-
+![output](/output.png)
 
 
 ## RESULT:
