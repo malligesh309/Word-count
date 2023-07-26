@@ -6,28 +6,34 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-
+open the file as a read mode
 ### Step 2: 
- 
+assgin a variable to store the data
 ### Step 3: 
-
+using f.read().split() and storing that in assgined variable as x
 ### Step 4:  
-
+y=len(x)
 ### Step 5: 
-
+print the number of words y
 ### Step 6: 
-
+End the program
 ## PROGRAM:
 ```
-num_words=0
-with open('cars (1).csv',"r") as f:
-  for line in f:
-    words=line.split()
-    num_words+=len(words)
-print("number of words",num_words)
+#to find no.of words in the csv file
+#Developed by : MALLIGESH M
+#Register number : 23002936
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+f=open("/content/drive/MyDrive/python/python.txt",'r')
+x=f.read().split()
+y=len(x)
+print("Number of words :",y)
 ```
 ### OUTPUT:
-![output](/output.png)
+![output](/out.png)
+![output](/txt.png)
 
 
 ## RESULT:
